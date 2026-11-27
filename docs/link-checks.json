@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://reverie-website-beta.vercel.app",
+    "status": 200,
+    "final": "https://reverie-website-beta.vercel.app"
+  },
+  {
+    "url": "https://bloomframe-story.vercel.app",
+    "status": 200,
+    "final": "https://bloomframe-story.vercel.app"
+  },
+  {
+    "url": "https://aurevella-website.vercel.app",
+    "status": 200,
+    "final": "https://aurevella-website.vercel.app"
+  },
+  {
+    "url": "https://dilux-lane-profile.vercel.app",
+    "status": 200,
+    "final": "https://dilux-lane-profile.vercel.app"
+  },
+  {
+    "url": "https://dilux-lane-portfolio.vercel.app",
+    "status": 200,
+    "final": "https://dilux-lane-portfolio.vercel.app"
+  },
+  {
+    "url": "https://dilux-lane-dev-portfolio.vercel.app",
+    "status": 200,
+    "final": "https://dilux-lane-dev-portfolio.vercel.app"
+  }
+]

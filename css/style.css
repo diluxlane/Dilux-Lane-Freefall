@@ -1,4 +1,4 @@
-/* Freefall: Arin Vale portfolio
+/* Freefall: Dilux Lane portfolio
    Palette is sampled from the two films: the golden shaft, the fire ring,
    the bone-white glow of the risen figure, and one cool iris for contrast. */
 :root {
@@ -450,7 +450,7 @@ html.has-cursor .cursor { display: block; }
 @media (max-aspect-ratio: 4/5) {
   .film { --f: 0%; }
   .world--back { z-index: 5; mix-blend-mode: overlay; }
-  .hero-name { top: auto; bottom: 19vh; flex-wrap: wrap; font-size: 27vw; line-height: .84; }
+  .hero-name { top: auto; bottom: 19vh; flex-wrap: wrap; font-size: 25vw; line-height: .84; }
   .hn.sp { width: 100%; height: 0; }
   .hero-intro { top: 12vh; max-width: 16em; }
 }

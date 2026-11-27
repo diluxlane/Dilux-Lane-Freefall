@@ -1,68 +1,41 @@
-# Freefall
+# Dilux Lane — Freefall
 
-A single-page portfolio for an independent designer, told as one fall. Scrolling drives everything: two films play frame by frame under your scroll, type flies past in 3D, and the story ends at a door you walk through to get in touch.
+Review-only flagship cinematic personal website: **AI-Native Builder & Explorer · Building Zyberlane**. An authorized source recreation, not a claim that the original implementation was authored by Dilux Lane.
 
-![The site playing on a monitor: the hero, the impact flash, the fire-ring shockwave and a case study](showcase/preview.jpg)
+**Portal likeness production is pending.** The retained source character is not Dilux Lane. Do not treat this branch as approved for public release. The page has noindex metadata while review is incomplete. No Vercel deployment or project was created by this implementation.
 
-Watch the full walkthrough: [showcase/freefall-showcase.mp4](showcase/freefall-showcase.mp4) (111 s, 1080×1920, with sound).
+## Local setup
 
-## The story, in scroll order
-
-1. **Loader.** A thin gold line fills while the first frames load, then you enter with or without sound.
-2. **The leap.** A figure falls through a shaft of light. Words, short lines and buttons rise past him in 3D, tilt with the mouse, and stretch with scroll speed. An altitude readout counts down to zero.
-3. **Impact.** At the hard cut the screen flashes white, shakes once and booms.
-4. **The noise.** He lands in a crowd surrounded by grey voices ("make the logo bigger"). A ring of fire blows them away.
-5. **Rise.** R-I-S-E assembles out of the depth as he stands up.
-6. **Index.** The film shrinks into one tile among floating project covers. Click a cover to jump to its case.
-7. **Selected work.** Four case screens stack and recede, each with a sliding title, a spinning disc and circular type.
-8. **About and services.** A manifesto that lights up word by word, a client marquee that follows your scroll, and service rows with a cursor-following preview.
-9. **The portal.** A man walks out of a burning doorway while arches fly past, then the closing call to action.
-10. **Contact.** Email, links, a live Lisbon clock, and "Fall again", which rewinds the whole story.
-
-## Run it
-
-Serve the folder with any static server and open it in a browser:
-
-```bash
-python -m http.server 8000
+```sh
+python3 -m http.server 8000
 ```
 
-Then open http://localhost:8000. Opening `index.html` straight from disk also works in most browsers, but a server is more reliable. Fonts (Google Fonts) and smooth scrolling ([Lenis](https://github.com/darkroomengineering/lenis)) load from CDNs, so you need a connection.
+Open http://localhost:8000. Static HTML/CSS/JavaScript; no build, package installation, backend, database, secrets or authentication required. Runtime dependencies retain the original Lenis 1.1.13 CDN script and Google Fonts Archivo/Instrument Serif. Network access is needed for those third-party resources.
 
-## Project layout
+## Structure and source
 
-```
-index.html            all page markup and copy
-css/style.css         styles; colours and type are tokens at the top
-js/main.js            the scroll engine: frame scrubbing, 3D type, every section
-assets/fall/          465 WebP frames of the falling film (30 fps, 720×1280)
-assets/portal/        239 WebP frames of the portal film (24 fps, 1600×900)
-showcase/             the showcase video and the scripts that make it
-```
+- `index.html`, `css/style.css`, `js/main.js`: original section structure and animation engine, personalized content and narrowly documented fixes.
+- `assets/fall/`: 465 original 720 × 1280 WebP frames; 30 fps source timing, unchanged SHA-256 hashes.
+- `assets/portal/`: 239 original 1600 × 900 WebP frames; 24 fps source timing, **review-only original likeness**.
+- `assets/projects/`: genuine project artwork/interface captures; provenance in docs.
+- `showcase/`: unmodified original production scripts, monitor, preview and video. These still represent the original identity and are technical reference artifacts, not personalized promotional material.
+- `tools/`: sequence validation and future portal conversion.
+- `docs/`: integrity manifest, production brief, content provenance and QA evidence.
 
-## Making it yours
+Original: https://github.com/gireeshkumarreddy/freefall-portfolio
 
-The name **Arin Vale**, the email, the clients and the four projects are placeholders.
+Pinned commit: `83c3ed252e8046dd7f5497d46e4078c82c03b478`.
 
-- **Name, email, projects, services:** `index.html`.
-- **Words that fly past during the story:** `WORLD`, `LINES` and `CTAS` near the top of `js/main.js`.
-- **Story timing** (which scroll position shows which frame, where the flash and shockwave land): `FRAME_KEYS`, `CUT` and `SHOCK` in `js/main.js`.
-- **Colours and fonts:** the `:root` block at the top of `css/style.css`.
+Exact transferred baseline: `37b510de35e7e215c8df3dec4963588adba61936` (715 tracked files, 67,242,570 bytes). User reports direct telephone permission from creator Gireesh Kumar Reddy, including no required visible website credit. No new open-source license or exclusive ownership claim is made. Existing third-party notices and dependencies remain subject to their respective licenses. Source palette, scene timing, frame assets, original typography and layout remain the visual source of truth.
 
-From the browser console, `freefall.jump('work')` scrolls to a section (`top`, `work`, `about`, `services`, `portal`, `contact`, or `story:0.5` for a point in the story).
+## Personalization
 
-## Rebuilding the showcase video
+Dilux Lane identity, per-letter hero, AI-native positioning, four project cases (RÊVERIE, Bloomframe, Aurevella and experimental Zyberlane XR), interests, five capability rows, public Instagram/profile/GitHub/Zyberlane destinations, metadata and Asia/Colombo clock. Recreated concepts are labelled honestly, with no fabricated clients, results, qualifications or availability claims. No other repository was modified.
 
-`showcase/record.mjs` drives headless Chrome through the whole site on a virtual clock, so every animation is captured frame-perfect. `showcase/composite.py` then places that recording on the monitor photo, adds the glass and light spill, and generates the soundtrack from the scroll.
+See [QA](docs/QA.md), [project provenance](docs/CONTENT-PROVENANCE.md), [portal production](docs/PORTAL-PRODUCTION.md) and [progress](docs/PROGRESS.md).
 
-You need Node 22 or newer, Google Chrome, ffmpeg, and Python with Pillow, NumPy and SciPy. Run both from the repository root:
+## Manual Vercel setup — user action only
 
-```bash
-node showcase/record.mjs
-```
+After reviewing the implementation PR, import this GitHub repository yourself. Suggested project name: `dilux-lane-freefall`. Framework: **Other**. Root directory: repository root. Build/install commands: leave empty. Output directory: `.`. No environment variables required. Select the implementation branch for a review preview if main still contains only the bootstrap README; do not expect the bootstrap main branch to render the site. Review portal status before approving any public release. Merge only when you approve.
 
-```bash
-python -I showcase/composite.py
-```
-
-Recording takes about 10 minutes and compositing about 15. They produce `showcase/freefall-showcase.mp4` and a flat 1650×900 copy, `showcase/freefall-screen.mp4`. The flat copy is not committed because it is larger than GitHub's 100 MB limit. If Chrome is not in its default location, set the `CHROME` environment variable to its path. The walkthrough's scroll and cursor path is scripted in `record.mjs`, so adjust it there if you change the page layout.
+`https://dilux-lane-freefall.vercel.app` is a **proposed future address**, not verified or claimed live. Git-connected pushes may deploy automatically after you connect the repository; production follows your configured production branch. Do not use the original showcase video as personalized promotion. After the portal is approved, remove review noindex and add canonical/social image URLs using the verified final domain.

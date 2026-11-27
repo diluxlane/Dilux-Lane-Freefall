@@ -933,11 +933,14 @@
   }
   $$('[data-enter]').forEach((b) => b.addEventListener('click', () => enter(b.dataset.enter === 'sound')));
 
+  // A stalled network must not permanently hide the entry controls.
+  const entryDeadline = setTimeout(() => loader.classList.add('is-ready'), 15000);
   fall.load(8, (r) => {
     const v = Math.round(r * 100);
     loadPct.textContent = v;
     loadFill.style.height = v + '%';
   }).then(() => {
+    clearTimeout(entryDeadline);
     portal.load(3);
     loader.classList.add('is-ready');
     const first = $('[data-enter="sound"]');
