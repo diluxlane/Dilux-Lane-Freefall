@@ -1,4 +1,4 @@
-/* Freefall: scroll engine for the Arin Vale portfolio.
+/* Freefall: scroll engine for the Dilux Lane portfolio.
    One requestAnimationFrame loop reads the scroll position and drives
    both films, the 3D type world and every section after it. */
 (() => {
@@ -69,7 +69,12 @@
         const i = this.order[next++];
         const img = new Image();
         img.decoding = 'async';
+        let finished = false;
+        const timeout = setTimeout(() => fin(false), 15000);
         const fin = (ok) => {
+          if (finished) return;
+          finished = true;
+          clearTimeout(timeout);
           if (ok) { this.imgs[i] = img; this.ok[i] = 1; }
           this.loaded++;
           if (onTick) onTick(Math.min(1, this.loaded / this.gate));
@@ -182,9 +187,9 @@
   const WORLD = {
     fall: {
       back: [
-        ['Freefall', 'xl ghost'], ['trust the drop', 'serif'], ['Art direction', 'tag'], ['Let go', 'xl'],
-        ['the floor is a rumour', 'serif molten'], ['Gravity', 'l ghost molten'], ['Brand identity', 'tag'],
-        ['No net', 'xl molten'], ['deadline: yesterday', 'serif'], ['Motion design', 'tag'], ['Light', 'l ghost'],
+        ['Freefall', 'xl ghost'], ['trust the drop', 'serif'], ['Creative technology', 'tag'], ['Let go', 'xl'],
+        ['the floor is a rumour', 'serif molten'], ['Gravity', 'l ghost molten'], ['AI-native building', 'tag'],
+        ['No net', 'xl molten'], ['deadline: yesterday', 'serif'], ['Immersive design', 'tag'], ['Light', 'l ghost'],
       ],
       front: [['Fall', 'xxl ghost'], ['Deeper', 'xxl ghost']],
     },
@@ -844,11 +849,15 @@
   // ---------- navigation ----------
   const menu = $('#menu');
   const menuBtn = $('#menuBtn');
+  menu.inert = true;
   const menuImg = $('.menu-preview img');
   function setMenu(open) {
     html.classList.toggle('menu-open', open);
     menuBtn.setAttribute('aria-expanded', String(open));
     menu.setAttribute('aria-hidden', String(!open));
+    menu.inert = !open;
+    if (open) $('.menu-list a').focus({ preventScroll: true });
+    else menuBtn.focus({ preventScroll: true });
     menuBtn.textContent = open ? 'Close' : 'Menu';
     if (lenis && S.entered) open ? lenis.stop() : lenis.start();
   }
@@ -895,13 +904,13 @@
     const email = copyBtn.dataset.email;
     try { await navigator.clipboard.writeText(email); copyBtn.textContent = 'Copied'; }
     catch { copyBtn.textContent = email; }
-    setTimeout(() => { copyBtn.textContent = 'Copy email'; }, 2200);
+    setTimeout(() => { copyBtn.textContent = 'Copy profile link'; }, 2200);
   });
 
-  // Lisbon clock
+  // Sri Lanka clock
   const clock = $('#clock');
   const tick = () => {
-    try { clock.textContent = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Lisbon' }).format(new Date()); }
+    try { clock.textContent = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Colombo' }).format(new Date()); }
     catch { clock.textContent = new Date().toTimeString().slice(0, 5); }
   };
   tick(); setInterval(tick, 15000);
