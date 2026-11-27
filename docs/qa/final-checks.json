@@ -1,0 +1,248 @@
+{
+  "360x800": [
+    {
+      "t": "D",
+      "x": 7.109375,
+      "right": 87.0625,
+      "y": 497
+    },
+    {
+      "t": "I",
+      "x": 87.0625,
+      "right": 119.015625,
+      "y": 497
+    },
+    {
+      "t": "L",
+      "x": 119.015625,
+      "right": 185.96875,
+      "y": 497
+    },
+    {
+      "t": "U",
+      "x": 185.96875,
+      "right": 270.921875,
+      "y": 497
+    },
+    {
+      "t": "X",
+      "x": 270.921875,
+      "right": 352.875,
+      "y": 497
+    },
+    {
+      "t": "L",
+      "x": 25.59375,
+      "right": 92.546875,
+      "y": 572
+    },
+    {
+      "t": "A",
+      "x": 92.546875,
+      "right": 174.5,
+      "y": 572
+    },
+    {
+      "t": "N",
+      "x": 174.5,
+      "right": 261.453125,
+      "y": 572
+    },
+    {
+      "t": "E",
+      "x": 261.453125,
+      "right": 334.40625,
+      "y": 572
+    }
+  ],
+  "412x915": [
+    {
+      "t": "D",
+      "x": 8.0625,
+      "right": 99.4375,
+      "y": 568
+    },
+    {
+      "t": "I",
+      "x": 99.4375,
+      "right": 135.8125,
+      "y": 568
+    },
+    {
+      "t": "L",
+      "x": 135.8125,
+      "right": 212.1875,
+      "y": 568
+    },
+    {
+      "t": "U",
+      "x": 212.1875,
+      "right": 309.5625,
+      "y": 568
+    },
+    {
+      "t": "X",
+      "x": 309.5625,
+      "right": 403.9375,
+      "y": 568
+    },
+    {
+      "t": "L",
+      "x": 29.25,
+      "right": 105.625,
+      "y": 655
+    },
+    {
+      "t": "A",
+      "x": 105.625,
+      "right": 199,
+      "y": 655
+    },
+    {
+      "t": "N",
+      "x": 199,
+      "right": 298.375,
+      "y": 655
+    },
+    {
+      "t": "E",
+      "x": 298.375,
+      "right": 382.75,
+      "y": 655
+    }
+  ],
+  "390x844": [
+    {
+      "t": "D",
+      "x": 7.4375,
+      "right": 94.0625,
+      "y": 520
+    },
+    {
+      "t": "I",
+      "x": 94.0625,
+      "right": 128.6875,
+      "y": 520
+    },
+    {
+      "t": "L",
+      "x": 128.6875,
+      "right": 201.3125,
+      "y": 520
+    },
+    {
+      "t": "U",
+      "x": 201.3125,
+      "right": 292.9375,
+      "y": 520
+    },
+    {
+      "t": "X",
+      "x": 292.9375,
+      "right": 382.5625,
+      "y": 520
+    },
+    {
+      "t": "L",
+      "x": 27.75,
+      "right": 100.375,
+      "y": 602
+    },
+    {
+      "t": "A",
+      "x": 100.375,
+      "right": 189,
+      "y": 602
+    },
+    {
+      "t": "N",
+      "x": 189,
+      "right": 282.625,
+      "y": 602
+    },
+    {
+      "t": "E",
+      "x": 282.625,
+      "right": 362.25,
+      "y": 602
+    }
+  ],
+  "original": {
+    "sequenceResponses": 704,
+    "lenis": true,
+    "resources": {
+      "count": 708,
+      "encodedBytes": 21140229
+    },
+    "samples": [
+      {
+        "id": "story",
+        "progress": 0.3,
+        "hash": "eb5f80623466ff84723c781afc60806e575a95baba9225c6687ad2376983044d"
+      },
+      {
+        "id": "story",
+        "progress": 0.6,
+        "hash": "10485440ea64ec0d3e1338faba6b2a81b9f79784a487a07e5e8aae1efc20f82d"
+      },
+      {
+        "id": "portal",
+        "progress": 0.35,
+        "hash": "a87cd7fec76e78bdd9ef2cad81bd694688ff22281df42bb2df7a69a82714acc6"
+      },
+      {
+        "id": "portal",
+        "progress": 0.68,
+        "hash": "14de1daf37ffedf4a56221cec46b5830ede19c52fee8d4bb5622171a7938ff1d"
+      },
+      {
+        "id": "portal",
+        "progress": 0.35,
+        "hash": "a87cd7fec76e78bdd9ef2cad81bd694688ff22281df42bb2df7a69a82714acc6"
+      }
+    ]
+  },
+  "implementation": {
+    "sequenceResponses": 704,
+    "lenis": true,
+    "resources": {
+      "count": 712,
+      "encodedBytes": 21459834
+    },
+    "samples": [
+      {
+        "id": "story",
+        "progress": 0.3,
+        "hash": "eb5f80623466ff84723c781afc60806e575a95baba9225c6687ad2376983044d"
+      },
+      {
+        "id": "story",
+        "progress": 0.6,
+        "hash": "10485440ea64ec0d3e1338faba6b2a81b9f79784a487a07e5e8aae1efc20f82d"
+      },
+      {
+        "id": "portal",
+        "progress": 0.35,
+        "hash": "a1d946a1c41422d9d06acf4ffe03e755dffc9f661d6d69c99fcca50f7df48f06"
+      },
+      {
+        "id": "portal",
+        "progress": 0.68,
+        "hash": "57b501d75743c822648a2c226de9c51fad78be07fd66941fd12486dca20b8cfc"
+      },
+      {
+        "id": "portal",
+        "progress": 0.35,
+        "hash": "a1d946a1c41422d9d06acf4ffe03e755dffc9f661d6d69c99fcca50f7df48f06"
+      }
+    ]
+  },
+  "skip": {
+    "y": 15300,
+    "target": 15300
+  },
+  "restart": 0,
+  "copy": "COPY PROFILE LINK",
+  "stalledEntryMs": 21621,
+  "stalledEntered": "has-cursor   is-entered lenis"
+}

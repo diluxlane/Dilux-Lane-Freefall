@@ -1,0 +1,14 @@
+{
+  "touchMenuOpen": "true",
+  "touchSkip": {
+    "y": 15555,
+    "target": 15555
+  },
+  "copiedProfile": "https://dilux-lane-profile.vercel.app",
+  "memory": {
+    "Documents": 2,
+    "Nodes": 1759,
+    "JSHeapUsedSize": 2707760,
+    "JSHeapTotalSize": 5562368
+  }
+}
