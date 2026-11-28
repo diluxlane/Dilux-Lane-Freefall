@@ -1,3 +1,11 @@
+A cinematic, scroll-driven personal portfolio exploring AI, creative technology and immersive digital experiences.
+
+**Live demo:** https://dilux-lane-freefall-zyberlane.vercel.app/
+
+![Dilux Lane Freefall, live site hero](docs/screenshot.svg)
+
+---
+
 # Dilux Lane — Freefall
 
 Review-only flagship cinematic personal website: **AI-Native Builder & Explorer · Building Zyberlane**. An authorized source recreation, not a claim that the original implementation was authored by Dilux Lane.
@@ -38,4 +46,4 @@ See [QA](docs/QA.md), [project provenance](docs/CONTENT-PROVENANCE.md), [portal 
 
 After reviewing the implementation PR, import this GitHub repository yourself. Suggested project name: `dilux-lane-freefall`. Framework: **Other**. Root directory: repository root. Build/install commands: leave empty. Output directory: `.`. No environment variables required. Select the implementation branch for a review preview if main still contains only the bootstrap README; do not expect the bootstrap main branch to render the site. Review portal status before approving any public release. Merge only when you approve.
 
-`https://dilux-lane-freefall.vercel.app` is a **proposed future address**, not verified or claimed live. Git-connected pushes may deploy automatically after you connect the repository; production follows your configured production branch. Do not use the original showcase video as personalized promotion. After the portal is approved, remove review noindex and add canonical/social image URLs using the verified final domain.
+`https://dilux-lane-freefall-zyberlane.vercel.app` is a **proposed future address**, not verified or claimed live. Git-connected pushes may deploy automatically after you connect the repository; production follows your configured production branch. Do not use the original showcase video as personalized promotion. After the portal is approved, remove review noindex and add canonical/social image URLs using the verified final domain.
